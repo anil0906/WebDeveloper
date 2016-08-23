@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="/bin/main.css" rel="stylesheet"><link>
+  <title>Cake Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"></link>
+  <link href="/bin/main.css" rel="stylesheet"></link>
 </head>
 <body>
   <main class="container">
-    <form role="form" id="cake-form">
+    <form role="form" id="cake-form" novalidate>
       <fieldset>
         <legend class="form-heading">Cake Enquiry Form</legend>
         <div class="control-container">
           <label class="form-label margin-bottom-2">Name:</label>
-          <input type="text" class="form-element form-input margin-bottom-2 name="name" autofocus placeholder="Enter Name"/>
+          <input type="text" class="form-element form-input margin-bottom-2" name="name" autofocus placeholder="Enter Name" required />
           <label class="form-label margin-bottom-2">Email:</label>
-          <input type="email" class="form-element form-input margin-bottom-2" name="email" placeholder="abc@xyz.com"/>
+          <input type="email" class="form-element form-input margin-bottom-2" name="email" placeholder="abc@xyz.com" required />
           <label class="form-label margin-bottom-2">Type of cake:</label>
           <div>
             <input type="checkbox" name="cake-type" value="Cupcakes" id="Cupcakes" />
@@ -23,7 +25,7 @@
             <label for="Cupcakes">Cheesecakes</label>
           </div>
           <div>
-            <input type="checkbox" name="cake-type" value="Butter Cakes" id="Butter Cakes" />
+            <input type="checkbox" name="cake-type" value="Butter Cakes" id="ButterCakes" />
             <label for="Cupcakes">Butter Cakes</label>
           </div>
           <div class="margin-bottom-2">
@@ -51,13 +53,13 @@
           <label class="form-label margin-bottom-2">Tell us about your dream cake:</label>
           <textarea class="form-element margin-bottom-2"></textarea>
           <div>
-            <div class="submit-button inline">Send away</div>
+            <button class="submit-button inline" id="submit-cake" type="submit">Send away</button>
             <div class="link-button inline" id="reset">Restart</div>
          </div>
       </div>
     </fieldset>
    </form>
  </main>
-<script src="/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="/app.js"></script>
 </body>
 </html>

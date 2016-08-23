@@ -1,6 +1,6 @@
 body {
   background-color:$base-bg-color;
-  font: $font-stack;
+  font-family: $font-stack;
   color:$base-fg-color;
 }
 .container {
@@ -13,4 +13,7 @@ body {
 }
 .inline{
 	display:inline-block;
+}
+.error {
+  outline: 3px solid red;
 }
