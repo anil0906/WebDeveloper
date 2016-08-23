@@ -1,0 +1,16 @@
+body {
+  background-color:$base-bg-color;
+  font: $font-stack;
+  color:$base-fg-color;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.control-container {
+	padding:30px;
+}
+.inline{
+	display:inline-block;
+}

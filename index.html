@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="bin/main.css" rel="stylesheet"><link>
+</head>
+<body>
+  <main class="container">
+    <form role="form" id="cake-form">
+      <fieldset>
+        <legend class="form-heading">Cake Enquiry Form</legend>
+        <div class="control-container">
+          <label class="form-label margin-bottom-2">Name:</label>
+          <input type="text" class="form-element form-input margin-bottom-2 name="name" autofocus placeholder="Enter Name"/>
+          <label class="form-label margin-bottom-2">Email:</label>
+          <input type="email" class="form-element form-input margin-bottom-2" name="email" placeholder="abc@xyz.com"/>
+          <label class="form-label margin-bottom-2">Type of cake:</label>
+          <div>
+            <input type="checkbox" name="cake-type" value="Cupcakes" id="Cupcakes" />
+            <label for="Cupcakes">Cupcakes</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cake-type" value="Cheesecakes" id="Cheesecakes" />
+            <label for="Cupcakes">Cheesecakes</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cake-type" value="Butter Cakes" id="Butter Cakes" />
+            <label for="Cupcakes">Butter Cakes</label>
+          </div>
+          <div class="margin-bottom-2">
+            <input type="checkbox" name="cake-type" value="Mudcakes" id="Mudcakes" />
+            <label for="Cupcakes">Mudcakes</label>
+          </div>
+          <label class="form-label margin-bottom-2">Celebration type:</label>
+          <div>
+            <input type="radio" name="celeb-type" value="Birthday" id="Birthday" required />
+            <label for="Birthday">Birthday</label>
+          </div>
+          <div>
+            <input type="radio" name="celeb-type" value="Wedding" id="Wedding" />
+            <label for="Wedding">Wedding</label>
+          </div>
+          <div>
+             <input type="radio" name="celeb-type" value="Corporate" id="Corporate" />
+             <label for="Corporate">Corporate</label>
+          </div>
+          <div class="margin-bottom-2">
+            <input type="radio" name="celeb-type" value="Others" id="Others" />
+            <label for="Others">Others</label>
+          </div>
+          <input type="text" class="form-element form-input margin-bottom-2" id="tell-us" disabled />
+          <label class="form-label margin-bottom-2">Tell us about your dream cake:</label>
+          <textarea class="form-element margin-bottom-2"></textarea>
+          <div>
+            <div class="submit-button inline">Send away</div>
+            <div class="link-button inline" id="reset">Restart</div>
+         </div>
+      </div>
+    </fieldset>
+   </form>
+ </main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.submit-button {
+	height: 30px;
+	width: 130px;
+	border: 3px solid $button-border;
+	background-color: transparent;
+	color:white;
+	text-align: center;
+	padding-top:10px;
+	margin-right:20px;
+}
+
+.link-button {
+	padding-top: 10px;
+	text-decoration: underline;
+	color: $link-color;
+}
+
+.link-button:hover, .submit-button:hover {
+	cursor: pointer;
+}
